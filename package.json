@@ -1,11 +1,24 @@
 {
   "name": "vuemat",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "main": "dist/vuemat.umd.min.js",
+  "author": "Sarmat Khachirov",
+  "license": "MIT",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sarmatdev/vuemat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sarmatdev/vuemat/issues"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-lib": "vue-cli-service build --target lib --name vuemat src/main.js",
+    "main": "./dist/vuemat.common.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
